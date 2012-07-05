@@ -1,0 +1,14 @@
+syntax: glob
+*.pyc
+.*un~
+*.swp
+tags
+*.patch
+*.orig
+interdiff.txt
+tmp
+.DS_Store
+.buildpath
+.project
+.settings
+scratch

@@ -1,0 +1,18 @@
+[core]
+  autocrlf = false
+  safecrlf = false
+  ignorecase = false
+	excludesfile = /home/sbl5007/.gitignore
+
+[color]
+	ui = auto
+[user]
+	name = Sam Leathers
+	email = sam@theleathers.net
+
+[merge]
+tool = threesome
+
+[mergetool "threesome"]
+cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+trustExitCode = true
