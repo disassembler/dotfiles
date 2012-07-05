@@ -64,7 +64,7 @@ rm -f ~/.hgrc
 # link configs
 ln -s "$HOME/lib/dotfiles/.gitconfig" "$HOME/.gitconfig"
 ln -s "$HOME/lib/dotfiles/.hgrc" "$HOME/.hgrc"
-ln -s "$HOME/lib/dotfiles/.hgignore" "$HOME/.hgignore"
+ln -s "$HOME/lib/dotfiles/.cvsignore" "$HOME/.cvsignore"
 ln -s "$HOME/lib/dotfiles/vim" "$HOME/.vim"
 ln -s "$HOME/lib/dotfiles/vim/vimrc" "$HOME/.vimrc"
 ln -s "$HOME/lib/dotfiles/.screenrc" "$HOME/.screenrc"
