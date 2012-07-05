@@ -1,0 +1,4 @@
+[submodule "vim"]
+	path = vim
+	url = git@github.com:disassembler/vim.git
+  ignore = dirty
