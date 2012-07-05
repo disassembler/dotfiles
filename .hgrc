@@ -22,16 +22,10 @@ schemes=
 crecord=~/lib/hg/crecord/crecord
 
 [merge-tools]
-threesome.executable = gvim
-threesome.args = -f $base $local $other $output -c 'ThreesomeInit'
-threesome.premerge = keep
-threesome.priority = 1
-
-
-[auth]
-myremote.schemes = https
-myremote.prefix = cosine.science.psu.edu/hg
-myremote.username = sbl5007
+splice.executable = gvim
+splice.args = -f $base $local $other $output -c 'SpliceInit'
+splice.premerge = keep
+splice.priority = 1
 
 [schemes]
 bb = https://bitbucket.org/
