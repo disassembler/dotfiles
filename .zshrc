@@ -39,9 +39,9 @@ zstyle '*' single-ignored show
 alias rsthttpd="sudo apachectl restart"
 
 # ls quickies
-alias ll="ls -Fhl"
-alias ls="ls -F"                                    
-alias la="ls -Fa"                  
+alias ll="ls -Fhl --color"
+alias ls="ls -F --color"
+alias la="ls -Fa --color"
 
 alias j='z'
 alias c='clear'
