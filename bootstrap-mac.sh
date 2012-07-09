@@ -39,12 +39,11 @@ cd
 
 wget http://personal.psu.edu/sbl5007/hgrc-base -O ~/.hgrc
 
-hg clone cos://sam-dotfiles ~/lib/dotfiles
+git clone https://github.com/disassembler/dotfiles.git ~/lib/dotfiles
+git clone git://github.com/sjl/oh-my-zsh.git ~/lib/oh-my-zsh
+git clone git://github.com/sjl/z-zsh.git ~/lib/z
 
 sudo easy_install hg-git
-hg clone git://github.com/sjl/oh-my-zsh ~/lib/oh-my-zsh
-hg clone git://github.com/sjl/z-zsh ~/lib/z
-
 
 hg clone http://bitbucket.org/ianb/pip/ ~/lib/python/pip
 cd ~/lib/python/pip
@@ -57,6 +56,7 @@ hg clone http://bitbucket.org/dhellmann/virtualenvwrapper ~/lib/python/virtualen
 cd ~/lib/python/virtualenvwrapper
 sudo python setup.py install
 cd
+
 sudo easy_install keyring
 
 rm -f ~/.hgrc
@@ -65,14 +65,13 @@ rm -f ~/.hgrc
 
 ln -s "$HOME/lib/dotfiles/.gitconfig" "$HOME/.gitconfig"
 ln -s "$HOME/lib/dotfiles/.hgrc" "$HOME/.hgrc"
-ln -s "$HOME/lib/dotfiles/.hgignore" "$HOME/.hgignore"
+ln -s "/home/sbl5007/lib/dotfiles/.cvsignore" "$HOME/.cvsignore"
 ln -s "$HOME/lib/dotfiles/vim" "$HOME/.vim"
 ln -s "$HOME/lib/dotfiles/vim/vimrc" "$HOME/.vimrc"
 ln -s "$HOME/lib/dotfiles/.screenrc" "$HOME/.screenrc"
 
 ln -s "$HOME/lib/dotfiles/.zshrc" "$HOME/.zshrc"
 
-hg clone cos://mercurial_keyring ~/lib/hg/mercurial_keyring
 hg clone bb://sjl/hg-prompt/ "$HOME/lib/hg/hg-prompt"
 hg clone bb://sjl/hg-paste/ "$HOME/lib/hg/hg-paste"
 hg clone bb://sjl/hg-review/ "$HOME/src/hg/hg-review"
