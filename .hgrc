@@ -2,7 +2,7 @@
 username = Samuel Leathers <sbl5007@psu.edu>
 editor = "/usr/bin/vim" --noplugin
 commitsubrepos = no
-ignore = ~/.hgignore
+ignore = ~/.cvsignore
 
 [pager]
 pager = LESS='FSRX' less
