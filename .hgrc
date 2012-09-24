@@ -14,7 +14,6 @@ prompt=~/lib/hg/hg-prompt/prompt.py
 shelve=~/lib/hg/hgshelve/hgshelve.py
 pager=
 color=
-mercurial_keyring=~/lib/hg/mercurial_keyring/mercurial_keyring.py
 hgext.bookmarks=
 hggit=
 graphlog=
@@ -31,3 +30,6 @@ splice.priority = 1
 bb = https://bitbucket.org/
 cos = ssh://hg@bit.science.psu.edu/
 mbb = ssh://hg@bitbucket.org/sbl5007/
+
+[git]
+intree=1
