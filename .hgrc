@@ -11,7 +11,6 @@ attend = annotate, cat, diff, export, glog, log, qdiff
 [extensions]
 purge=
 prompt=~/lib/hg/hg-prompt/prompt.py
-shelve=~/lib/hg/hgshelve/hgshelve.py
 pager=
 color=
 hgext.bookmarks=
