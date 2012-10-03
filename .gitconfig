@@ -2,7 +2,7 @@
   autocrlf = false
   safecrlf = false
   ignorecase = false
-	excludesfile = /home/sbl5007/.cvsignore
+	excludesfile = ~/.cvsignore
 
 [color]
 	ui = auto
