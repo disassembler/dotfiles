@@ -16,8 +16,8 @@ unsetopt promptcr
 export HOSTNAME=$(hostname)
 
 # Useful aliases -------------------------------------------------------------
-alias vi='gvim'
-alias vim='gvim'
+#alias vi='gvim'
+#alias vim='gvim'
 alias dbg='gvim --role "Debugger"'
 alias gentoo='/usr/local/gentoo/startprefix'
 alias d2='wine /pvr/diablo2/Diablo\ II/Diablo\ II.exe -w'
