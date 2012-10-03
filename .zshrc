@@ -16,8 +16,8 @@ unsetopt promptcr
 export HOSTNAME=$(hostname)
 
 # Useful aliases -------------------------------------------------------------
-alias vi='gvim'
-alias vim='gvim'
+#alias vi='gvim'
+#alias vim='gvim'
 alias dbg='gvim --role "Debugger"'
 alias gentoo='/usr/local/gentoo/startprefix'
 alias d2='wine /pvr/diablo2/Diablo\ II/Diablo\ II.exe -w'
@@ -64,8 +64,8 @@ export PATH=~/bin:~/python/bin:/usr/local/bin:/usr/X11/bin:/usr/texbin:$PATH
 export MANPATH=$MANPATH:/usr/local/share/man
 
 # Pear stack
-alias pear="php /usr/lib/php/pear/pearcmd.php" 
-alias pecl="php /usr/lib/php/pear/peclcmd.php"
+#alias pear="php /usr/lib/php/pear/pearcmd.php" 
+#alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 # android sdk
 export PATH=~/lib/android-sdk-macos/tools:~/lib/android-sdk-macos/platform-tools:$PATH
