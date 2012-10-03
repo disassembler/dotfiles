@@ -82,7 +82,7 @@ hg clone bb://Bill_Barry/hgattic "$HOME/lib/hg/hgattic"
 hg clone bb://edgimar/crecord "$HOME/lib/hg/crecord"
 
 # Get android sdk
-wget http://dl.google.com/android/android-sdk_r16-macosx.zip -O ~/scratch/
+wget http://dl.google.com/android/android-sdk_r20.0.3-macosx.zip -O ~/scratch/
 cd ~/lib
 unzip ~/scratch/android-sdk_r16-macosx.zip
 ~/lib/android-sdk-macosx/tools/android update sdk --no-ui
