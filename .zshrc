@@ -71,7 +71,7 @@ export MANPATH=$MANPATH:/usr/local/share/man
 export PATH=~/lib/android-sdk-macos/tools:~/lib/android-sdk-macos/platform-tools:$PATH
 
 # Other
-export PATH=/usr/local/bin:/usr/local/sbin:/Applications/MAMP/Library/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.3.6/bin:~/drush:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Environment variables ------------------------------------------------------
 export EDITOR='vim'
 export GREP_OPTIONS='-n --color=auto'
