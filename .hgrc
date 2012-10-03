@@ -31,3 +31,6 @@ splice.priority = 1
 bb = https://bitbucket.org/
 cos = ssh://hg@bit.science.psu.edu/
 mbb = ssh://hg@bitbucket.org/sbl5007/
+
+[git]
+intree=1
