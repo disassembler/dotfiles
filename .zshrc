@@ -60,7 +60,7 @@ keychain -q ~/.ssh/id_rsa
 
 
 # PATH Changes ---------------------------------------------------------------
-export PATH=~/bin:~/python/bin:/usr/local/bin:/usr/X11/bin:/usr/texbin:$PATH
+export PATH=~/bin:~/python/bin:/usr/local/bin:/usr/X11/bin:/usr/texbin:$PATH:$HOME/.rvm/bin
 export MANPATH=$MANPATH:/usr/local/share/man
 
 # Pear stack
@@ -114,4 +114,3 @@ function precmd () {
 
 # Local Settings -------------------------------------------------------------
 if [[ -s $HOME/.zshrc_local ]] ; then source $HOME/.zshrc_local ; fi
-
