@@ -1,5 +1,5 @@
 export ZSH="$HOME/lib/oh-my-zsh"
-export ZSH_THEME="prose"
+export ZSH_THEME="disasm"
 export DISABLE_AUTO_UPDATE="true"
 export OH_MY_ZSH_DEBUG="true"
 plugins=(command-coloring pip fabric lein redis-cli vagrant)
