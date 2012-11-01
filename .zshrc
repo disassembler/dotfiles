@@ -72,6 +72,10 @@ export PATH=~/lib/android-sdk-macos/tools:~/lib/android-sdk-macos/platform-tools
 
 # Other
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# Ruby - RVM
+source ~/.rvm/scripts/rvm
+
 # Environment variables ------------------------------------------------------
 export EDITOR='vim'
 export GREP_OPTIONS='-n --color=auto'
