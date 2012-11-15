@@ -13,6 +13,9 @@
 [merge]
 tool = splice
 
+[branch]
+  autosetuprebase = always
+
 [mergetool "splice"]
 cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 trustExitCode = true
