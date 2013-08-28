@@ -29,7 +29,7 @@ mkdir -p ~/bin
 mkdir -p ~/src
 
 git clone https://github.com/disassembler/dotfiles.git ~/lib/dotfiles
-git clone https://github.com/sjl/oh-my-zsh.git ~/lib/oh-my-zsh
+git clone https://github.com/disassembler/oh-my-zsh.git ~/lib/oh-my-zsh
 git clone https://github.com/sjl/z-zsh.git ~/lib/z
 
 # Get android sdk
