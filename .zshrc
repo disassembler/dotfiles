@@ -21,6 +21,7 @@ export HOSTNAME=$(hostname)
 alias dbg='gvim --role "Debugger"'
 alias gentoo='/usr/local/gentoo/startprefix'
 alias d2='wine /pvr/diablo2/Diablo\ II/Diablo\ II.exe -w'
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 
 
 # SSH Completion
@@ -68,13 +69,13 @@ export MANPATH=$MANPATH:/usr/local/share/man
 #alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 # android sdk
-export PATH=~/lib/android-sdk-macos/tools:~/lib/android-sdk-macos/platform-tools:$PATH
+export PATH=~/lib/android-sdk-macosx/tools:~/lib/android-sdk-macosx/platform-tools:$PATH
 
 # Other
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Ruby - RVM
-source ~/.rvm/scripts/rvm
+#source ~/.rvm/scripts/rvm
 
 # Environment variables ------------------------------------------------------
 export EDITOR='vim'
