@@ -32,6 +32,9 @@ git clone https://github.com/disassembler/dotfiles.git ~/lib/dotfiles
 git clone https://github.com/disassembler/oh-my-zsh.git ~/lib/oh-my-zsh
 git clone https://github.com/sjl/z-zsh.git ~/lib/z
 
+cd ~/lib/dotfiles
+git submodule update --init --recursive
+
 # Get android sdk
 # wget http://dl.google.com/android/android-sdk_r16-linux.tgz -O ~/scratch/android-sdk_r16-linux.tgz
 #cd ~/lib
