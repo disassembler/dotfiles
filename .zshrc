@@ -55,11 +55,6 @@ alias b='python ~/lib/python/t/t.py --task-dir ./bugs --list bugs'
 # Drupal ctags
 alias ctags-drupal='ctags --langmap=php:.engine.test.inc.module.theme.php --php-kinds=cdfi     --languages=php --recurse'
 
-# Load keychain if it exists
-keychain -q ~/.ssh/id_rsa
-. ~/.keychain/$HOSTNAME-sh
-
-
 # PATH Changes ---------------------------------------------------------------
 export PATH=~/bin:~/python/bin:/usr/local/bin:/usr/X11/bin:/usr/texbin:$PATH:$HOME/.rvm/bin
 export MANPATH=$MANPATH:/usr/local/share/man
