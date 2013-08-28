@@ -10,7 +10,6 @@
 # the pull from cosine to work!
 
 # Remove files that will be replaced
-rm -rf ~/lib
 rm -f ~/.hgrc
 rm -f ~/.hgignore
 rm -f ~/.zshrc
@@ -27,9 +26,6 @@ mkdir -p ~/lib/virtualenvs
 mkdir -p ~/bin
 mkdir -p ~/src
 
-wget http://personal.psu.edu/sbl5007/hg.tar.gz -O ~/scratch/hg.tar.gz
-tar -zxvf ~/scratch/hg.tar.gz -C ~/lib
-
 export PATH="$HOME/lib/hg/hg-stable:$PATH"
 cd ~/lib/hg/hg-stable
 make local
@@ -37,9 +33,7 @@ hg up
 make local
 cd
 
-wget http://personal.psu.edu/sbl5007/hgrc-base -O ~/.hgrc
 
-git clone https://github.com/disassembler/dotfiles.git ~/lib/dotfiles
 git clone git://github.com/sjl/oh-my-zsh.git ~/lib/oh-my-zsh
 git clone git://github.com/sjl/z-zsh.git ~/lib/z
 
@@ -57,15 +51,13 @@ cd ~/lib/python/virtualenvwrapper
 sudo python setup.py install
 cd
 
-sudo easy_install keyring
-
 rm -f ~/.hgrc
 
 #ln -s "$HOME/lib/dotfiles/zsh" "$HOME/lib/oh-my-zsh/custom"
 
 ln -s "$HOME/lib/dotfiles/.gitconfig" "$HOME/.gitconfig"
 ln -s "$HOME/lib/dotfiles/.hgrc" "$HOME/.hgrc"
-ln -s "/home/sbl5007/lib/dotfiles/.cvsignore" "$HOME/.cvsignore"
+ln -s "$HOME/lib/dotfiles/.cvsignore" "$HOME/.cvsignore"
 ln -s "$HOME/lib/dotfiles/vim" "$HOME/.vim"
 ln -s "$HOME/lib/dotfiles/vim/vimrc" "$HOME/.vimrc"
 ln -s "$HOME/lib/dotfiles/.screenrc" "$HOME/.screenrc"
