@@ -6,9 +6,13 @@ if [ -d $HOME/.zsh.before/ ]; then
   fi
 fi
 
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 # Environment variables ------------------------------------------------------
-export PATH=~$HOME/bin:$HOME/lib/dotfiles/bin:$HOME/python/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/lib/dotfiles/bin:$HOME/python/bin:/usr/local/bin:$PATH
 export MANPATH=$MANPATH:/usr/local/share/man
 export EDITOR='vim'
 export GREP_OPTIONS='-n --color=auto'
@@ -183,7 +187,6 @@ alias rm='nocorrect rm'
 if [ -e ~/.secrets ]; then
   source ~/.secrets
 fi
-prompt steeef_simplified
 set -o vi
 export EDITOR=vim
 export VISUAL=vim
