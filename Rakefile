@@ -114,6 +114,7 @@ def install_homebrew
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
   run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher}
+  run %{brew install macvim --with-macarchs=i386 --with-lua --enable-pythoninterp --override-system-vim}
   puts
   puts
 end
