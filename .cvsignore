@@ -1,6 +1,7 @@
 syntax: glob
 *.pyc
 .*un~
+*~
 *.swp
 tags
 *.patch
@@ -13,3 +14,4 @@ tmp
 .settings
 scratch
 sites/default
+sites/all
