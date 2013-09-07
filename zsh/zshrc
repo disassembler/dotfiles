@@ -12,10 +12,22 @@ export PATH=~$HOME/bin:$HOME/lib/dotfiles/bin:$HOME/python/bin:/usr/local/bin:$P
 export MANPATH=$MANPATH:/usr/local/share/man
 export EDITOR='vim'
 export GREP_OPTIONS='-n --color=auto'
+export HISTFILE=$HOME/.zsh_history
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTCONTROL=erasedups
 export COMMAND_MODE=unix2003
+
+# SSH Completion
+zstyle ':completion:*:scp:*' tag-order \
+   files users 'hosts:-host hosts:-domain:domain hosts:-ipaddr"IP\ Address *'
+zstyle ':completion:*:scp:*' group-order \
+   files all-files users hosts-domain hosts-host hosts-ipaddr
+zstyle ':completion:*:ssh:*' tag-order \
+   users 'hosts:-host hosts:-domain:domain hosts:-ipaddr"IP\ Address *'
+zstyle ':completion:*:ssh:*' group-order \
+   hosts-domain hosts-host users hosts-ipaddr
+zstyle '*' single-ignored show
 
 alias psa="ps aux"
 alias psg="ps aux | grep "
