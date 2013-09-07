@@ -76,7 +76,7 @@ task :install_neobundle do
   puts ""
 
   run %{
-    cd $HOME/.yadr
+    cd $HOME/lib/dotfiles
     git clone https://github.com/Shougo/neobundle.vim #{File.join('vim','bundle', 'neobundle.vim')}
   }
 
