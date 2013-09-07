@@ -41,7 +41,7 @@ alias rsthttpd="sudo apachectl restart"
 
 # ls quickies
 alias ll="ls -Fhl --color"
-alias ls="ls -F --color"
+#alias ls="ls -F"
 alias la="ls -Fa --color"
 
 alias j='z'
@@ -55,8 +55,12 @@ alias b='python ~/lib/python/t/t.py --task-dir ./bugs --list bugs'
 # Drupal ctags
 alias ctags-drupal='ctags --langmap=php:.engine.test.inc.module.theme.php --php-kinds=cdfi     --languages=php --recurse'
 
+# Load keychain if it exists
+#keychain -q ~/.ssh/id_rsa
+#. ~/.keychain/$HOSTNAME-sh
+
 # PATH Changes ---------------------------------------------------------------
-export PATH=~/bin:~/python/bin:/usr/local/bin:/usr/X11/bin:/usr/texbin:$PATH:$HOME/.rvm/bin
+export PATH=~/bin:~/python/bin:/usr/local/bin:/usr/X11/bin:/usr/texbin:$PATH:$HOME/.rvm/bin:/usr/texbin
 export MANPATH=$MANPATH:/usr/local/share/man
 
 # Pear stack
@@ -104,6 +108,8 @@ export NODE_PATH="$NODE_PATH:/usr/local/lib/node:/usr/local/lib/node_modules"
 export PATH="$HOME/lib/hg/hg-stable:$PATH"
 export PYTHONPATH="$HOME/lib/hg/hg-stable:$PYTHONPATH"
 
+# PHP 5.4 ----------------------------------------------------------------------
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 # Extra ----------------------------------------------------------------------
 source ~/lib/z/z.sh
 
