@@ -212,6 +212,17 @@ alias -g G='| grep' # now you can do: ls foo G something
 # to find all files containing 'foo' in the name
 function fn() { ls **/*$1* }
 
+function curlga() { curl $* | git apply -v --index }
+
+function drushreinstall() {
+  sudo rm -rf sites/default/files/*
+  drush si
+  drush en simpletest -y
+  sudo chmod -R 777 sites/default/files
+  drush uli -l http://drupal.local
+
+}
+
 # Load any custom after code
 if [ -d $HOME/.zsh.after/ ]; then
   if [ "$(ls -A $HOME/.zsh.after/)" ]; then
