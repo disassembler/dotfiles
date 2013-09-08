@@ -35,6 +35,7 @@ end
 task :install_prezto do
   if want_to_install?('zsh enhancements & prezto')
     install_prezto
+    file_operation(Dir.glob('{zsh/*}'))
   end
 end
 
