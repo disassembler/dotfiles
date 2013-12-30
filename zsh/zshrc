@@ -223,6 +223,18 @@ function drushreinstall() {
 
 }
 
+function ltx() {
+  latex $1.tex
+  dvipdf $1.dvi
+  open $1.pdf
+  rm $1.dvi
+  rm $1.aux
+  rm $1.log
+}
+function atrename() {
+  mv $1.tex AT_UUHC_${1}_2013-10-10.tex
+}
+
 # Load any custom after code
 if [ -d $HOME/.zsh.after/ ]; then
   if [ "$(ls -A $HOME/.zsh.after/)" ]; then
