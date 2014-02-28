@@ -199,20 +199,13 @@ def install_prezto
 
   unless File.exists?(File.join(ENV['ZDOTDIR'] || ENV['HOME'], ".zprezto"))
     run %{ ln -nfs "$HOME/lib/dotfiles/zsh/prezto" "${ZDOTDIR:-$HOME}/.zprezto" }
-
-    # The prezto runcoms are only going to be installed if zprezto has never been installed
-    file_operation(Dir.glob('zsh/prezto/runcoms/z*'), :copy)
   end
+  file_operation(Dir.glob('zsh/prezto/runcoms/z*'), :copy)
 
   puts
-  puts "Overriding prezto ~/.zpreztorc with dotfiles's zpreztorc to enable additional modules..."
   run %{ ln -nfs "$HOME/lib/dotfiles/zsh/prezto-override/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
 
   puts
-  puts "Creating directories for your customizations"
-  run %{ mkdir -p $HOME/.zsh.before }
-  run %{ mkdir -p $HOME/.zsh.after }
-  run %{ mkdir -p $HOME/.zsh.prompts }
 
   if ENV["SHELL"].include? 'zsh' then
     puts "Zsh is already configured as your shell of choice. Restart your session to load the new settings"
