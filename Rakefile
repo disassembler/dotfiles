@@ -203,7 +203,7 @@ def install_prezto
   file_operation(Dir.glob('zsh/prezto/runcoms/z*'), :copy)
 
   puts
-  run %{ ln -nfs "$HOME/.zprezto/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
+  run %{ ln -nfs "$HOME/.zprezto/runcoms/zpreztorc" "${ZDOTDIR:-$HOME}/.zpreztorc" }
 
   puts
 
