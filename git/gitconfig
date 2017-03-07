@@ -1,6 +1,7 @@
 [user]
 	name = Samuel Leathers
 	email = sam@appliedtrust.com
+	signingkey = 013A52BB
 
 [color]
   ui = true
